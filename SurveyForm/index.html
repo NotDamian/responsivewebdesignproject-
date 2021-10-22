@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--metadete informacje o stronie-->
+        <meta charset="UTF-8">
+        <!-- opis striny-->
+        <meta name="description" content="opis strony">
+        <meta name="author" content="o autorze" >
+        <meta name="keywords" content="html, tutorial, itp">
+        <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+        <title>Tytół strony</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main id="main" class="main">
+            <header class="header">
+                <h1 id="title">FreeCodeCamp Survey Form</h1>
+                <p id="description">Description for title ;)</p>
+            </header>
+            <section class="wrapper">
+                <form id="survey-form" class="survey-form">
+                    <label for="name" id="name-label">Name:</label><br>
+                    <input type="text" id="name" class="input" name="name" placeholder="Your name" required><br>
+
+                    <label for="email" id="email-label">Email:</label><br>
+                    <input type="email" id="email" class="input" name="email" placeholder="Your email" required><br>
+
+                    <label for="age" id="number-label">Age</label><br>
+                    <input type="number" id="number" class="input" name="age" placeholder="Age" min="16" max="99"><br>
+
+                    <label for="role" id="role-label">Role:</label><br>
+                    <select id="dropdown" class="input" name="role">
+                        <option disabled selected value>Select role</option>
+                        <option value="student">Student</option>
+                        <option value="Full Time Job">Full Time Job</option>
+                        <option value="Part Time Job">Part Time Job</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+
+                    <div class="radio">
+                        <p>Are you ok?</p>
+                        <input type="radio" id="good" name="areyouok" value="good">
+                        <label for="good" id="ok-label" name="areyouok" >good</label><br>
+
+                        <input type="radio" id="maybe" name="areyouok" value="maybe" checked>
+                        <label for="maybe" id="maybe-label" name="areyouok" >maybe</label><br>
+
+                        <input type="radio" id="no" name="areyouok" value="no">
+                        <label for="no" id="no-label" name="areyouok" >no</label><br>
+                    </div>
+
+                    <div class="checkbox">
+                        <p>What would you like to learn?</p>
+                        <input type="checkbox" id="js" name="js" value="js">
+                        <label for="js" id="js-label" name="js" >JS</label><br>
+
+                        <input type="checkbox" id="java" name="java" value="java">
+                        <label for="java" id="java-label" name="java" >Java</label><br>
+
+                        <input type="checkbox" id="php" name="php" value="php">
+                        <label for="php" id="php-label" name="php" >PHP</label><br>
+                    </div>
+
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea><br>
+
+                    <button id="submit" class="submit" type="submit">Submit</button>
+                </form>
+
+            </section>
+        </main>
+    <body>
+</html>
